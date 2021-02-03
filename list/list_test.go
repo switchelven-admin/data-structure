@@ -110,7 +110,7 @@ func TestList_Map_String(t *testing.T) {
 			expectedL := list.New().Prepend("new world!").Prepend("my world!").Prepend("hello world!")
 			Convey("when I apply Map function", func() {
 				newL := l.Map(addWorld)
-				So(newL, ShouldResemble, expectedL)
+				So(*newL, ShouldResemble, expectedL)
 			})
 		})
 
