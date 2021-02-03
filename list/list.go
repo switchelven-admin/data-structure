@@ -72,5 +72,3 @@ func (l *List) BullSort(comp func(interface{}, interface{}) bool) *List {
 
 	return sorted.AddSorted(l.Head, comp)
 }
-
-git remote set-url origin github.com-switchelven:switchelven/data-structure
